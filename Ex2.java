@@ -153,7 +153,7 @@ class Ex2_7 extends Ex{
     
     System.out.println("１桁の負の整数値をランダムに生成して表示");
     int y = rand.nextInt(9);
-    y = x * -1;
+    y = y - 9;
     System.out.println(y);
 
     System.out.println("２桁の正の整数値をランダムに生成して表示。");
@@ -204,7 +204,7 @@ class Ex2_9 extends Ex{
     
     System.out.println("-1.0以上1.0未満の実数値をランダムに生成して表示。");
 
-    System.out.println((z -1) + x);
+    System.out.println(z);
   }
 }
 
