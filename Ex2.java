@@ -133,16 +133,102 @@ class Ex2_000 extends Ex{
   void execute(){
     Random rand = new Random();
 
-    int luchy = rand.nextInt(10);   // 0～9の乱数
+    int lucky = rand.nextInt(10);   // 0～9の乱数
+    lucky = lucky + 1;
+    System.out.println("今日のラッキーナンバーは" + lucky + "です。");
+  }
+}
 
-    System.out.println("今日のラッキーナンバーは" + luchy + "です。");
+
+class Ex2_7 extends Ex{
+  void execute(){
+
+    Random rand = new Random();
+
+    int x = rand.nextInt(9);
+    x = x + 1;
+    
+    System.out.println("１桁の正の整数値をランダムに生成して表示。");
+    System.out.println(x);
+    
+    System.out.println("１桁の負の整数値をランダムに生成して表示");
+    int y = rand.nextInt(9);
+    y = x * -1;
+    System.out.println(y);
+
+    System.out.println("２桁の正の整数値をランダムに生成して表示。");
+    int z = rand.nextInt(90);
+    z = z + 10;
+    System.out.println(z);
+
+  }
+}
+
+
+class Ex2_8 extends Ex{
+  void execute(){
+    Scanner stdIn = new Scanner(System.in);
+
+    System.out.println("数値を入力してください");
+    System.out.print("：");   
+    int x = stdIn.nextInt();
+
+    Random rand = new Random();
+    int y = rand.nextInt(11);
+    y = (y - 5);
+    x = x + y;
+    System.out.println("その値の±５の乱数を生成しました。それは" + x + "です。");
+  }
+}
+
+
+class Ex2_9 extends Ex{
+  void execute(){
+    Scanner stdIn = new Scanner(System.in);
+    Random rand = new Random();
+
+    double x = rand.nextDouble();
+    double y = rand.nextDouble();
+    y = y * 10.0;
+    double z = rand.nextDouble();
+    z = z * 2.0 - 1.0;
+    
+    System.out.println("0.0以上1.0未満の実数値をランダムに生成して表示。");
+
+    System.out.println(x);
+
+
+    System.out.println("0.0以上10.0未満の実数値をランダムに生成して表示。");
+    System.out.println(y + x);
+
+    
+    System.out.println("-1.0以上1.0未満の実数値をランダムに生成して表示。");
+
+    System.out.println((z -1) + x);
+  }
+}
+
+
+class Ex2_10 extends Ex{
+  void execute(){
+    Scanner stdIn = new Scanner(System.in);
+
+    System.out.println("挨拶を行うプログラム");
+
+    System.out.print("姓: ");    
+    String x = stdIn.next();
+
+    System.out.println("名: ");
+    String y = stdIn.next();
+
+    System.out.println("こんにちは" + x + y + "さん。");
   }
 }
 
 public class Ex2 {
   public static void main(String[] args){
     Ex a;
-    a = new Ex2_00();
+/*    a = new Ex2_00();
     a.execute(); 
     a = new Ex2_3();
     a.execute(); 
@@ -152,15 +238,26 @@ public class Ex2 {
     a.execute();
     a = new Ex2_6();
     a.execute(); 
+*/    
+    a = new Ex2_7();
+    a.execute();
+    a = new Ex2_8();
+    a.execute();
+    a = new Ex2_9();
+    a.execute();
+    a = new Ex2_10();
+    a.execute();
+
+    
     /*
-     a = new Ex2_000();
-      a.execute(); 
-      a = new Ex2_0();
-      a.execute();
-      a = new Ex2_1();
-      a.execute();
-      a = new Ex2_2();
-     a.execute();
-     */
+       a = new Ex2_000();
+       a.execute(); 
+       a = new Ex2_0();
+       a.execute();
+       a = new Ex2_1();
+       a.execute();
+       a = new Ex2_2();
+       a.execute();
+       */
   }
 }
