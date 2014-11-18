@@ -112,17 +112,16 @@ class Ex3{
     } else {
       return min;
     }
-    
   }
 
   public String ex3_13(int a){
    if (a == 12 || a == 1 || a == 2){
     return "冬";
-   } else if (a == 3 || a == 4 || a == 5){
+   } else if (a > 2 && a < 6){
     return "春";
-   } else if (a == 6 || a == 7 || a == 8){
+   } else if (a > 5 && a < 9){
     return "夏";
-   } else if (a == 9 || a == 10 || a == 11){
+   } else if (a > 8 && a < 12){
     return "秋";
    } else {
     return "範囲(1～12)外の値です";
