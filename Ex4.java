@@ -15,7 +15,7 @@ class Ex4{
   public String [] ex4_3(int [] a){
 
     String [] hantei = {"正", "負", "零"};
-    
+   return hantai; 
     }
 
 
