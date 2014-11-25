@@ -20,7 +20,7 @@ class Ex4{
 
 
 
-  }
+  
 
   public int ex4_4(int a){
 
